@@ -45,7 +45,7 @@
   </nav>
 
 <!-- Top -->
-  <div class="top">
+  <div class="top menu-bg">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 top-text">
@@ -289,11 +289,13 @@
     $(document).ready(function () {
       $('.navbar-toggler').on('click', function() {
         $('.top-text').toggleClass('moved');
+        $('.top-img').toggleClass('moved');
       });
 
       $('.nav-link').on('click', function() {
         $('.navbar-collapse').collapse('hide');
         $('.top-text').removeClass('moved');
+        $('.top-img').removeClass('moved');
       });
     });
   </script>
